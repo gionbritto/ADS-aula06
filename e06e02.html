@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercicio | Pos Aula 06</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <!--header-->
+        <div class="jumbotron">
+                <h1 class="display-4">Análise e Desenvolvimento de Sistemas</h1>
+                <p class="lead">Atividades praticas executadas no Laboratório</p>
+                <hr class="my-4">
+                <p>Exercicios Pós Aula 06 - Parte 2</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="http://github.com/gionbritto" role="button">Meu Github</a>
+                </p>
+              </div>
+
+            <!--Navbar-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="e06e01.html">Exercício 01</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link  active" href="e06e02.html">Exercicío 02</a>
+            </li>
+            
+    </ul>
+    <br>
+    <br>
+    <div class="container">
+
+    
+    <div class="container-fluid">
+        <div class="row-fluid">
+            
+                
+                <h3 class="display-4">Capítulo 1</h3>
+                <h3 class="display-5">Espresões em C</h3><br><br>
+            
+            <!--
+            <div class="span3">
+                <h3>Botoes</h3>
+                <a href="#" class="btn">Botao btn</a>
+                <a href="#" class="btn btn-primary">Botão btn-primary</a> <hr/>
+              <a href="#" class="btn btn-danger">Botão btn-danger</a> <hr/>
+              <a href="#" class="btn btn-info">Botão btn-info</a> <hr/>
+              <a href="#" class="btn btn-inverse">Botão btn-inverse</a> <hr/>
+              <a href="#" class="btn btn-success">Botão btn-success</a> <hr/>
+              <a href="#" class="btn btn-warning">Botão btn-warning</a> 
+            </div>-->
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <!--Card Container 1-->
+    <div class="card">
+        <h5 class="card-header">1 - Os Cinco Tipos Básicos de Dados</h5>
+        <div class="card-body">
+            <div class="card-title"><b>Apostila do HTML</b></div><br>
+            <p class="card-text">Há cinco tipos básicos de dados em C: 
+                caractere (char), inteiro (int), ponto flutuante (float), 
+                ponto flutuante de precisão dupla (double) e sem valor (void).</p><br><br>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th scope="col">Tipo</th>
+                            <th scope="col">Tamanho aporx em bits</th>
+                            <th scope="col">Faixa mínima</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>char</td>
+                            <td>8</td>
+                            <td>-127 a 127</td>
+                        </tr>
+                        <tr>
+                                <td>int</td>
+                                <td>16</td>
+                                <td>-32767 a 32767</td>
+                        </tr>
+                        <tr>
+                                    <td>float</td>
+                                    <td>32</td>
+                                    <td>Seis digitos de precisão</td>
+                        </tr>
+                        <tr>
+                                        <td>double</td>
+                                        <td>64</td>
+                                        <td>Des dígitos de precisão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+        </div>
+    </div>
+    <br><br>
+
+    <!--Card Container 2-->
+
+    <div class="card">
+            <h5 class="card-header">2 - Nomes de Identificadores</h5>
+            <div class="card-body">
+                <!--<div class="card-title"><b>Apostila do HTML</b></div><br>-->
+                <p class="card-text">O padrão ANSI C define os nomes de variáveis, funções, rótulos e vários outros objetos definidos pelo usuário como identificadores. 
+                        Esses identificadores podem variar de um a diversos caracteres, sendo que o primeiro caractere deve ser uma letra ou um sublinhado e os caracteres subseqüentes devem ser letras, números ou sublinhados. 
+                        Em C, letras maiúsculas e minúsculas são tratadas diferentemente.
+                        Um identificador não pode ser igual a uma palavra-chave de C e não deve ter o mesmo nome que as funções.
+                        </p><br>   
+                    
+        </div>
+</div><br><br>
+
+<!--Card Container 3-->
+
+    <div class="card">
+            <h5 class="card-header">3 - Variáveis</h5>
+            <div class="card-body">
+                <!--<div class="card-title"><b>Apostila do HTML</b></div><br>-->
+                <p class="card-text">Uma variável é uma posição de memória, com um nome, que é usada para guardar um valor que pode ser modificado pelo programa.</p>
+                <p>Todas as variáveis em C devem ser declaradas antes de serem usadas. A forma geral de uma declaração é:</p>
+
+                <table>
+                    <tr>
+                     <td width="150"><b>tipo</b></td>
+                     <td>lista_de_variáveis;</td>
+                    </tr>
+                    <tr>
+                        <td><b>onde</b></td>
+                        <td>tipo é um tipo de dado válido em C mais quaisquer modificadores;</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lista_de_variáveis pode consistir em um ou mais nomes de identificadores separados por vírgulas.</td>
+                    </tr>
+                </table>
+             
+        </div>
+
+        <h5 class="card-header"></h5>
+            <div class="card-body">
+                <div class="card-title"><b>3.1. Onde as Variáveis são Declaradas</b></div><br>
+                <p class="card-text">Variáveis são declaradas em três lugares básicos:
+                    <ul>
+                        <li>dentro de funções (variáveis locais);</li>
+                        <li>na definição de parâmetros de funções (parâmetros formais);</li>
+                        <li>fora de todas as funções (variáveis globais).</li>
+                    </ul>
+                   
+                </p>
+<hr>
+                <div class="card-title"><b>Variáveis Locais</b></div><br>
+                <p class="card-text">Variáveis locais só podem ser referenciadas por comandos que estão dentro do bloco no qual 
+                    as variáveis foram declaradas.Portanto, não são reconhecidas fora de seu próprio bloco de código. Elas são criadas
+                     na entrada de seu bloco e destruídas na saída.</p>  
+                     <hr>
+                <div class="card-title"><b>Parâmetros Formais</b></div><br>
+                <p class="card-text">Parâmetros formais são variáveis que receberão os valores dos argumentos. Eles se comportam como qualquer outra variável local dentro da função. </p>
+				
+<br>   
+                    
+        </div>
+</div><br><br>
+<!--fim parte 3-->
+
+<!--Card Container 1-->
+<div class="card">
+        <h5 class="card-header">5 - Operadores</h5>
+        <div class="card-body">
+            <div class="card-title"><b>5.1. Operador de Atribuição</b></div><br>
+            <p class="card-text">Em C, você pode usar o operador de atribuição dentro de qualquer expressão válida de C.
+                    A forma geral do comando de atribuição é:
+                    
+                    <pre>nome_da_variável = expressão;</pre>
+                    </p>
+                    <p>
+                            <b>onde </b>expressão pode ser tão simples como uma única constante ou tão complexa quanto você necessite.
+                    </p><br><br>
+
+
+                    <hr>
+                <div class="card-title"><b>5.2. Operadores Aritméticos</b></div><br>
+                
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th scope="col">Operador</th>
+                            <th scope="col">Ação</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtração, também menos unário</td>
+                           
+                        </tr>
+                        <tr>
+                                <td>+</td>
+                                <td>Adição</td>
+                                
+                        </tr>
+                        <tr>
+                                    <td>*</td>
+                                    <td>Multiplicação</td>
+                                    
+                        </tr>
+                        <tr>
+                                        <td>/</td>
+                                        <td>Divisão</td>
+                        </tr>
+                        <tr>
+                                <td>%</td>
+                                <td>Módulo</td>
+                        </tr>
+                        <tr>
+                                <td>--</td>
+                                <td>Decremento</td>
+                        </tr>
+                        <tr>
+                                <td>++</td>
+                                <td>Incremento</td>
+                        </tr>
+                    </tbody>
+                </table><br><br><hr>
+
+                <!---->
+                <div class="card-title"><b>5.3. Operadores Relacionais e Lógicos</b></div><br>
+                
+                <p>No termo operador relacional, relacional refere-se às relações que os valores podem ter uns com os outros.</p>
+                        <p>No termo operador lógico, lógico refere-se às maneiras que essas relações podem ser conectadas. </p>
+                        <p>A idéia de verdadeiro e falso está por trás dos conceitos dos operadores lógicos e relacionais. Em C, verdadeiro é qualquer valor diferente de zero; falso é zero.</p>
+                        <p>As expressões que usam operadores relacionais ou lógicos devolvem zero para falso e um para verdadeiro. 
+                        </p>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th scope="col">p</th>
+                            <th scope="col">q</th>
+                            <th scope="col">p&&q</th>
+                            <th scope="col">p||q</th>
+                            <th scope="col">!p</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                                
+                        </tr>
+                        <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                    
+                        </tr>
+                        <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            
+        </div>
+    </div>
+
+<!--Fim container-->    
+</div>
+<br><br>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 jumbotron">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+      
+              <!-- Grid column -->
+              <div class="col-md-6 mt-md-0 mt-3">
+      
+                <!-- Content -->
+                <h5 class="text-uppercase">Página desenvolvida com Boostrap</h5>
+                <p>Através dos links acesse os exercicios de aulas passadas</p><br>
+      
+              </div>
+              <!-- Grid column -->
+      
+              <hr class="clearfix w-100 d-md-none pb-3">
+      
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+      
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Pós-aula 04</h5>
+      
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 4</a>
+                    </li>
+                  </ul>
+      
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+      
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Pós-aula 05</h5>
+      
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!">Link 4</a>
+                    </li>
+                  </ul>
+      
+                </div>
+                <!-- Grid column -->
+
+               
+      
+            </div>
+            <!-- Grid row -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    Desenvolvido <a href="#">por Giovanne Britto</a>
+                  </div>
+                  <!-- Copyright -->
+              
+                  </div>
+   
+</body>
+</html>
